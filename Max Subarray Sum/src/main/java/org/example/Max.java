@@ -7,9 +7,7 @@ public class Max {
         int max = 0;
         for(Integer[] subArray: findSubArrays(arr)){
             int subSum = findSum(subArray);
-            if(max < subSum){
-                max = subSum;
-            }
+            max = Math.max(max, subSum);
         }
         return max;
     }
