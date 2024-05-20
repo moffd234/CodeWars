@@ -29,7 +29,11 @@ public class Max {
     }
 
     public static int findSum(Integer[] nums) {
-
-        return 0;
+        int sum = 0;
+        for(int i: nums){
+            sum += i;
+        }
+        
+        return sum;
     }
 }
