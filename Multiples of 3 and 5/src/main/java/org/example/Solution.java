@@ -3,10 +3,9 @@ package org.example;
 import java.util.ArrayList;
 
 public class Solution {
-
     /*
-    Find all multiples of 3 and 5
-    Sum them together
+        This could be done easily in one method with about 5 lines of code.
+        However, I wanted to break this up to adhere to single use
      */
     public int solution(int number) {
         ArrayList<Integer> multiples = getMultiples(number);
