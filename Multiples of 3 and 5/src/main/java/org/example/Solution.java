@@ -10,8 +10,7 @@ public class Solution {
      */
     public int solution(int number) {
         ArrayList<Integer> multiples = getMultiples(number);
-
-        return 0;
+        return sumMultiples(multiples);
     }
 
 
