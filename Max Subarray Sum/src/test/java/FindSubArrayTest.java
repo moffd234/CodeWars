@@ -10,6 +10,7 @@ public class FindSubArrayTest {
         int[] nums = {1, 2, 3, 4, 5, 6, 7};
         ArrayList<Integer[]> expected = new ArrayList<>();
 
+        expected.add(new Integer[]{});
         expected.add(new Integer[]{1});
         expected.add(new Integer[]{1, 2});
         expected.add(new Integer[]{1, 2, 3});
@@ -52,9 +53,11 @@ public class FindSubArrayTest {
     public void findSubArraysEmptyTest() {
         int[] nums = {};
         ArrayList<Integer[]> expected = new ArrayList<>();
+
+        expected.add(new Integer[]{});
         ArrayList<Integer[]> actual = Max.findSubArrays(nums);
 
-        Assert.assertEquals(0, actual.size());
+        Assert.assertEquals(1, actual.size());
         Assert.assertArrayEquals(expected.toArray(), actual.toArray());
     }
 
@@ -63,6 +66,7 @@ public class FindSubArrayTest {
         int[] nums = {1, -2, 3, -4, -5, -6, 7};
         ArrayList<Integer[]> expected = new ArrayList<>();
 
+        expected.add(new Integer[]{});
         expected.add(new Integer[]{1});
         expected.add(new Integer[]{1, -2});
         expected.add(new Integer[]{1, -2, 3});
