@@ -9,6 +9,7 @@ public class Solution {
     Sum them together
      */
     public int solution(int number) {
+        ArrayList<Integer> multiples = getMultiples(number);
 
         return 0;
     }
@@ -22,5 +23,9 @@ public class Solution {
             }
         }
         return multiples;
+    }
+
+    public int sumMultiples(ArrayList<Integer> multiples) {
+        return 0;
     }
 }
