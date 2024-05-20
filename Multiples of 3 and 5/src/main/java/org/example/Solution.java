@@ -26,6 +26,10 @@ public class Solution {
     }
 
     public int sumMultiples(ArrayList<Integer> multiples) {
-        return 0;
+        int sum = 0;
+        for(int i : multiples) {
+            sum += i;
+        }
+        return sum;
     }
 }
