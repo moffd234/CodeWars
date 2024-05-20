@@ -27,7 +27,7 @@ public class MultiplesTest {
     @Test
     public void test15() {
 
-        ArrayList<Integer> expected = new ArrayList<>(Arrays.asList(3, 5, 6, 9, 12, 15));
+        ArrayList<Integer> expected = new ArrayList<>(Arrays.asList(3, 5, 6, 9, 10, 12));
         ArrayList<Integer> actual = solution.getMultiples(15);
 
         assertEquals(expected, actual);
