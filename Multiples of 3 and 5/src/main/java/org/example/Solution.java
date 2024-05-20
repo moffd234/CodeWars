@@ -1,5 +1,7 @@
 package org.example;
 
+import java.util.ArrayList;
+
 public class Solution {
 
     /*
@@ -12,4 +14,8 @@ public class Solution {
     }
 
 
+    public ArrayList<Integer> getMultiples(int num) {
+        ArrayList<Integer> multiples = new ArrayList<>();
+        return multiples;
+    }
 }
