@@ -4,7 +4,14 @@ import java.util.ArrayList;
 
 public class Max {
     public static int sequence(int[] arr) {
-        return 4;
+        int max = 0;
+        for(Integer[] subArray: findSubArrays(arr)){
+            int subSum = findSum(subArray);
+            if(max < subSum){
+                max = subSum;
+            }
+        }
+        return max;
     }
 
 
@@ -33,7 +40,7 @@ public class Max {
         for(int i: nums){
             sum += i;
         }
-        
+
         return sum;
     }
 }
