@@ -12,6 +12,11 @@ public class Kata {
     }
 
     public static int calcWordScore(String str) {
-        return 0;
+        int sum = 0;
+        for(Character c: str.toCharArray()) {
+            sum += calcLetterScore(c);
+        }
+        return sum;
     }
+
 }
