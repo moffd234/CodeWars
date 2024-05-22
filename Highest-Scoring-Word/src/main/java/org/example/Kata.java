@@ -10,4 +10,8 @@ public class Kata {
     public static int calcLetterScore(char letter) {
         return letter - 'a' + 1;
     }
+
+    public static int calcWordScore(String str) {
+        return 0;
+    }
 }
