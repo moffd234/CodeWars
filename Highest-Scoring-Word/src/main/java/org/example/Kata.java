@@ -8,6 +8,6 @@ public class Kata {
     }
 
     public static int calcLetterScore(char letter) {
-        return 0;
+        return letter - 'a' + 1;
     }
 }
