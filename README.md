@@ -1,11 +1,13 @@
 # CodeWars
 
-This repository contains solutions to various coding challenges from CodeWars.
+This repository contains solutions to various coding challenges from CodeWars, implemented in Java. Each solution aims to provide efficient and clean code.
 
 ## Table of Contents
 
 - [Challenges](#challenges)
   - [Binary Addition](#binary-addition)
+  - [Detect Pangram](#detect-pangram)
+  - [Highest Scoring Word](#highest-scoring-word)
   - [Max Subarray Sum](#max-subarray-sum)
   - [Multiples of 3 and 5](#multiples-of-3-and-5)
   - [Parity Outlier](#parity-outlier)
@@ -16,6 +18,14 @@ This repository contains solutions to various coding challenges from CodeWars.
 ### Binary Addition
 - **Description**: Adds two binary numbers and returns their sum in binary.
 - **File**: `BinaryAddition.java`
+
+### Detect Pangram
+- **Description**: Determines if a given sentence is a pangram, containing every letter of the alphabet at least once.
+- **File**: `DetectPangram.java`
+
+### Highest Scoring Word
+- **Description**: Finds the highest scoring word in a sentence based on letter values.
+- **File**: `HighestScoringWord.java`
 
 ### Max Subarray Sum
 - **Description**: Finds the maximum sum of a contiguous subarray.
