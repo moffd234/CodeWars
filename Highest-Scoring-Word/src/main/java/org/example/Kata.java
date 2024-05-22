@@ -3,8 +3,18 @@ package org.example;
 public class Kata {
 
     public static String high(String s) {
-        // Your code here...
-        return "";
+        int maxScore = Integer.MIN_VALUE;
+        String maxWord = "";
+
+        for(String str : s.split(" ")) {
+            int score = calcWordScore(str);
+            if(score > maxScore) {
+                maxScore = score;
+                maxWord = str;
+            }
+        }
+
+        return maxWord;
     }
 
     public static int calcLetterScore(char letter) {
