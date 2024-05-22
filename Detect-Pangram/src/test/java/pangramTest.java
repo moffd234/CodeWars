@@ -57,7 +57,7 @@ public class pangramTest {
     @Test
     public void testSpecialAndNumbersFalse() {
         String pangram = "1The qu!ick brow7n fo&x ju^7mps o*7ver th89e.!";
-        assertTrue(pc.check(pangram));
+        assertFalse(pc.check(pangram));
     }
 
     @Test

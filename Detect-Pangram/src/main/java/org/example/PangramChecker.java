@@ -1,5 +1,6 @@
 package org.example;
 
+import java.util.HashSet;
 import java.util.Set;
 
 public class PangramChecker {
@@ -12,6 +13,12 @@ public class PangramChecker {
     }
 
     public Set<Character> getUniqueChars(String sentence){
-        return null;
+        Set<Character> uniqueChars = new HashSet<>();
+        for(char c : sentence.toCharArray()){
+            if(Character.isLetter(c)){
+                uniqueChars.add(Character.toLowerCase(c));
+            }
+        }
+        return uniqueChars;
     }
 }
