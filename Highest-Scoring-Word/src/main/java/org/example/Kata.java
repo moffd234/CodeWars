@@ -8,10 +8,7 @@ public class Kata {
 
         for(String str : s.split(" ")) {
             int score = calcWordScore(str);
-            if(score > maxScore) {
-                maxScore = score;
-                maxWord = str;
-            }
+            maxScore = Math.max(score, maxScore);
         }
 
         return maxWord;
