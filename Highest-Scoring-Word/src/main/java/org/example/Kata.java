@@ -7,4 +7,7 @@ public class Kata {
         return "";
     }
 
+    public static int calcLetterScore(char letter) {
+        return 0;
+    }
 }
