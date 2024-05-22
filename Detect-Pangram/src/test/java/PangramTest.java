@@ -1,11 +1,10 @@
-import com.sun.source.util.ParameterNameProvider;
 import org.example.PangramChecker;
 import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class pangramTest {
+public class PangramTest {
     PangramChecker pc;
 
     @Before
