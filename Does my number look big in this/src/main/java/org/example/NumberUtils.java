@@ -3,22 +3,17 @@ package org.example;
 public class NumberUtils {
 
     public static boolean isNarcissistic(int number) {
-        int sum = getSum(number);
-        return false;
-    }
-
-    public static int getSum(int n){
-        int sum = 0;
-
-        // Get each individual digit
-        while (n > 0) {
-            sum += n % 10;
-            n = n / 10;
-        }
-        return sum;
+        return number == calculateNarcissisticSum(number);
     }
 
     public static int calculateNarcissisticSum(int n) {
-        return 0;
+        int total = 0;
+        int len = String.valueOf(n).length();
+        while (n > 0) {
+            int number = n % 10;
+            total += (int) Math.pow(number, len);
+            n = n / 10;
+        }
+        return total;
     }
 }
