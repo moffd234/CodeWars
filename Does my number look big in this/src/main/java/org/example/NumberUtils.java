@@ -18,4 +18,7 @@ public class NumberUtils {
         return sum;
     }
 
+    public static int calculateNarcissisticSum(int n) {
+        return 0;
+    }
 }
