@@ -2,7 +2,7 @@ import org.example.NumberUtils;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class getSumTests {
+public class GetSumTests {
 
     @Test
     public void test0() {
