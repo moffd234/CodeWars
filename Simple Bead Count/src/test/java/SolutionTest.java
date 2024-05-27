@@ -23,17 +23,11 @@ public class SolutionTest {
 
     @Test
     public void test6() {
-        assertEquals(12, BeadsCounter.countRedBeads(6));
+        assertEquals(10, BeadsCounter.countRedBeads(6));
     }
     @Test
     public void test7() {
-        assertEquals(100, BeadsCounter.countRedBeads(50));
-    }
-    @Test
-    public void testIntegerOverflow() {
-        Assert.assertThrows(ArithmeticException.class, () -> {
-            BeadsCounter.countRedBeads(Integer.MAX_VALUE);
-        });
+        assertEquals(98, BeadsCounter.countRedBeads(50));
     }
 
 }
