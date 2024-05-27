@@ -1,4 +1,5 @@
 import org.example.BeadsCounter;
+import org.junit.Assert;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
@@ -19,4 +20,20 @@ public class SolutionTest {
     public void test5() {
         assertEquals(8, BeadsCounter.countRedBeads(5));
     }
+
+    @Test
+    public void test6() {
+        assertEquals(12, BeadsCounter.countRedBeads(6));
+    }
+    @Test
+    public void test7() {
+        assertEquals(100, BeadsCounter.countRedBeads(50));
+    }
+    @Test
+    public void testIntegerOverflow() {
+        Assert.assertThrows(ArithmeticException.class, () -> {
+            BeadsCounter.countRedBeads(Integer.MAX_VALUE);
+        });
+    }
+
 }
