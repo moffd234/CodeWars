@@ -13,4 +13,16 @@ public class NumberUtilsTest {
         assertFalse(NumberUtils.isNarcissistic(112));
     }
 
+    @Test
+    public void userCreatedTests() {
+        assertTrue(NumberUtils.isNarcissistic(1));
+        assertFalse(NumberUtils.isNarcissistic(10));
+        assertTrue(NumberUtils.isNarcissistic(407));
+        assertFalse(NumberUtils.isNarcissistic(100));
+        assertFalse(NumberUtils.isNarcissistic(200));
+        assertFalse(NumberUtils.isNarcissistic(123456));
+        assertTrue(NumberUtils.isNarcissistic(9474));
+        assertTrue(NumberUtils.isNarcissistic(0));
+        assertFalse(NumberUtils.isNarcissistic(Integer.MAX_VALUE));
+    }
 }
