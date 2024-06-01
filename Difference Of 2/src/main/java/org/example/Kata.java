@@ -9,11 +9,15 @@ public class Kata {
         ArrayList<int[]> output = new ArrayList<>();
 
         for (int[] subArray : subArrays) {
-            if (subArray[0] - subArray[1] == 2) {
+            if (Math.abs(subArray[0] - subArray[1]) == 2) {
                 output.add(subArray);
             }
         }
-        return new int[0][0];
+
+        System.out.println(output);
+        int[][] result =  convertTo2DArray(output);
+        System.out.println(Arrays.deepToString(result));
+        return result;
     }
 
 
@@ -36,6 +40,7 @@ public class Kata {
 
         return subArrays;
     }
+
 
     public static int[][] convertTo2DArray(ArrayList<int[]> input) {
         int[][] output = new int[input.size()][2];
