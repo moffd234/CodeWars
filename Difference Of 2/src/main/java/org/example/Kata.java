@@ -13,10 +13,10 @@ public class Kata {
                 output.add(subArray);
             }
         }
-        System.out.println(Arrays.deepToString(subArrays));
         return new int[0][0];
-
     }
+
+
     public static int[][] findSubArrays(int[] input) {
         int n = input.length;
         if (n < 2) {
@@ -35,5 +35,9 @@ public class Kata {
         }
 
         return subArrays;
+    }
+
+    public static int[][] convertTo2DArray(ArrayList<int[]> input) {
+        return null;
     }
 }
