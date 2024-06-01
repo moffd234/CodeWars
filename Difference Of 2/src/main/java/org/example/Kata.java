@@ -6,4 +6,8 @@ public class Kata {
         return new int[][]{new int[]{}};
 
     }
+
+    public static int[][] findSubArrays(int[] input) {
+        return null;
+    }
 }
