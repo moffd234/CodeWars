@@ -5,6 +5,7 @@ import java.util.Arrays;
 
 public class Kata {
     public static int[][] twosDifference(int[] array) {
+        Arrays.sort(array);
         int[][] subArrays = findSubArrays(array);
         ArrayList<int[]> output = new ArrayList<>();
 
