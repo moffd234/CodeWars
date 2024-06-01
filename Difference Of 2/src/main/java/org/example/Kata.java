@@ -1,12 +1,22 @@
 package org.example;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class Kata {
     public static int[][] twosDifference(int[] array) {
+        int[][] subArrays = findSubArrays(array);
+        ArrayList<int[]> output = new ArrayList<>();
 
-        return new int[][]{new int[]{}};
+        for (int[] subArray : subArrays) {
+            if (subArray[0] - subArray[1] == 2) {
+                output.add(subArray);
+            }
+        }
+        System.out.println(Arrays.deepToString(subArrays));
+        return new int[0][0];
 
     }
-
     public static int[][] findSubArrays(int[] input) {
         int n = input.length;
         if (n < 2) {
