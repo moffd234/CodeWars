@@ -38,6 +38,10 @@ public class Kata {
     }
 
     public static int[][] convertTo2DArray(ArrayList<int[]> input) {
-        return null;
+        int[][] output = new int[input.size()][2];
+        for (int i = 0; i < input.size(); i++) {
+            output[i] = input.get(i);
+        }
+        return output;
     }
 }
