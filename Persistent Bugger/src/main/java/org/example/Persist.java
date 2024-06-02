@@ -19,6 +19,8 @@ public class Persist {
 
     // Splits the string by its digits then returns the product of the digits as a string
     public static String stringProduct(String str) {
-        return null;
+        String[] digits = str.split("");
+        long temp = getProductOfDigits(digits);
+        return String.valueOf(temp);
     }
 }
