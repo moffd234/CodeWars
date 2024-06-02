@@ -16,4 +16,9 @@ public class Persist {
         }
         return output;
     }
+
+    // Splits the string by its digits then returns the product of the digits as a string
+    public static String stringProduct(String str) {
+        return null;
+    }
 }
