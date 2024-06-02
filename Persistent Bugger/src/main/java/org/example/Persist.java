@@ -6,6 +6,14 @@ public class Persist {
     }
 
     public static long getProductOfDigits(String[] digits) {
-        return 0;
+        if(digits.length == 0){
+            return 0;
+        }
+        
+        long output = 1;
+        for(String digit : digits){
+            output *= Long.parseLong(digit);
+        }
+        return output;
     }
 }
