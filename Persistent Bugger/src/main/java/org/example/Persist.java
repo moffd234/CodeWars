@@ -2,7 +2,13 @@ package org.example;
 
 public class Persist {
     public static int persistence(long n) {
-        return 0;
+        int total = 0;
+        String strN = String.valueOf(n);
+        while(strN.length() > 1){ // While n > 1 digit
+            strN = stringProduct(strN);
+            total += 1;
+        }
+        return total; // your code
     }
 
     public static long getProductOfDigits(String[] digits) {
