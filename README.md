@@ -4,14 +4,20 @@ This repository contains solutions to various coding challenges from CodeWars, i
 
 ## Table of Contents
 
-- [Challenges](#challenges)
-  - [Binary Addition](#binary-addition)
-  - [Detect Pangram](#detect-pangram)
-  - [Highest Scoring Word](#highest-scoring-word)
-  - [Max Subarray Sum](#max-subarray-sum)
-  - [Multiples of 3 and 5](#multiples-of-3-and-5)
-  - [Parity Outlier](#parity-outlier)
-  - [Square n Sum](#square-n-sum)
+- [Binary Addition](#binary-addition)
+- [Detect Pangram](#detect-pangram)
+- [Difference Of 2](#difference-of-2)
+- [Does My Number Look Big In This](#does-my-number-look-big-in-this)
+- [Find Odd Int](#find-odd-int)
+- [Find Smallest Int](#find-smallest-int)
+- [First Non-Repeating Character](#first-non-repeating-character)
+- [Highest Scoring Word](#highest-scoring-word)
+- [Max Subarray Sum](#max-subarray-sum)
+- [Multiples of 3 and 5](#multiples-of-3-and-5)
+- [Parity Outlier](#parity-outlier)
+- [Persistent Bugger](#persistent-bugger)
+- [Simple Bead Count](#simple-bead-count)
+- [Square n Sum](#square-n-sum)
 
 ## Challenges
 
@@ -22,6 +28,26 @@ This repository contains solutions to various coding challenges from CodeWars, i
 ### Detect Pangram
 - **Description**: Determines if a given sentence is a pangram, containing every letter of the alphabet at least once.
 - **File**: `DetectPangram.java`
+
+### Difference Of 2
+- **Description**: Finds pairs of integers from a given array that have a difference of 2.
+- **File**: `DifferenceOf2.java`
+
+### Does My Number Look Big In This
+- **Description**: Determines if a number is a Narcissistic number (Armstrong number).
+- **File**: `DoesMyNumberLookBigInThis.java`
+
+### Find Odd Int
+- **Description**: Finds the integer that appears an odd number of times in a given array.
+- **File**: `FindOddInt.java`
+
+### Find Smallest Int
+- **Description**: Finds the smallest integer in a given array.
+- **File**: `FindSmallestInt.java`
+
+### First Non-Repeating Character
+- **Description**: Finds the first non-repeating character in a string.
+- **File**: `FirstNonRepeatingCharacter.java`
 
 ### Highest Scoring Word
 - **Description**: Finds the highest scoring word in a sentence based on letter values.
@@ -38,6 +64,14 @@ This repository contains solutions to various coding challenges from CodeWars, i
 ### Parity Outlier
 - **Description**: Identifies the outlier in an array of integers where all but one are either odd or even.
 - **File**: `ParityOutlier.java`
+
+### Persistent Bugger
+- **Description**: Determines the multiplicative persistence of a number, which is the number of times you must multiply the digits until you reach a single digit.
+- **File**: `PersistentBugger.java`
+
+### Simple Bead Count
+- **Description**: Counts the number of beads in a string representation of a number.
+- **File**: `SimpleBeadCount.java`
 
 ### Square n Sum
 - **Description**: Squares each number in an array and returns the sum of the squares.
