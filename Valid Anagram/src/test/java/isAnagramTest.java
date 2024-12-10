@@ -30,4 +30,14 @@ public class isAnagramTest {
 
         Assert.assertFalse(actual);
     }
+
+    @Test
+    public void testIsAnagramTrueRepeatingLetters() {
+        String s = "bbcc";
+        String t = "ccbc";
+
+        boolean actual = solution.isAnagram(s, t);
+
+        Assert.assertFalse(actual);
+    }
 }
